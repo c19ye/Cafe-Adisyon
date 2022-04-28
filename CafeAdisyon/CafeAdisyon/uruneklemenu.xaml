@@ -1,0 +1,98 @@
+﻿<Window x:Class="CafeAdisyon.uruneklemenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeAdisyon"
+        mc:Ignorable="d"
+        Title="Ürün Ekle" Height="590.141" Width="848.894" Loaded="Window_Loaded">
+    <Viewbox Stretch="Fill">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/texture_pattern_black_background-672119.jpg" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <ListBox Name="UListBox" HorizontalAlignment="Left" Height="299" Margin="72,50,0,0" VerticalAlignment="Top" Width="218" />
+
+            <StackPanel Margin="72,349,657,110">
+
+                <Button HorizontalAlignment="Left" Width="107" Click="Button_Click"   >
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                    <Image Source="Images/124-512.png" Stretch="Fill" Height="72" Width="92" />
+
+                </Button>
+                <TextBlock  Text="     Düzenle" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16" Height="27"  />
+            </StackPanel>
+            <StackPanel Margin="195,349,595,110">
+                <Button Margin="6,0,0,0" Click="Button_Click_1">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                    <Image Source="Images/127-512.png" Stretch="Fill" Height="72" Width="85"/>
+                </Button>
+                <TextBlock  Text="         Sil" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16" Height="22"  />
+
+            </StackPanel>
+            <GroupBox Margin="401,50,64,164" Header="Urun olustur" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold">
+                <StackPanel Margin="0,10,0,0" >
+
+                    <TextBlock  Text="          URUN OLUSTUR" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="22" Height="35" Margin="64,0,48,0"  />
+                    <UniformGrid Rows="2" Columns="1" Height="32">
+                    
+                        <Label Content="kategori:" Margin="3,0,263,-16" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16"/>
+                        <ComboBox x:Name="Cmbx_UrunKategori" Margin="104,-16,113,10" SelectionChanged="ComboBox_SelectionChanged"/>
+                    </UniformGrid>
+                    <UniformGrid Rows="2" Columns="1" Height="32">
+                        <Label Content="         urun:" Margin="3,0,263,-16" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16"/>
+
+                        <TextBox Name="tbUrun" TextWrapping="Wrap" Margin="106,-16,113,10" FontWeight="Normal"/>
+                    </UniformGrid>
+                    <UniformGrid Rows="2" Columns="1" Height="32">
+                        <Label Content="         fiyat:" Margin="3,0,263,-16" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16"/>
+
+                        <TextBox Name="tbFiyat" TextWrapping="Wrap" Margin="106,-16,113,10" FontWeight="Normal"/>
+                    </UniformGrid>
+                    <StackPanel Margin="10,0" Height="137">
+                        <Canvas Height="140" Margin="0,0,-9,0">
+                            <Button Background="{x:Null}" Height="133"  Canvas.Left="36" Click="Button_Click_4">
+                                <StackPanel Width="100">
+                                    <Image Stretch="Fill" Source="Images/Save-512.png" Height="83"/>
+                                    <Label Content="   kaydet" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Background="{x:Null}" Height="133" Canvas.Left="145" Click="Button_Click_2" >
+                                <StackPanel Width="100">
+                                    <Image Stretch="Fill" Source="Images/update.png" Height="83"/>
+                                    <Label Content=" guncelle" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Background="{x:Null}" Height="133" Canvas.Left="254" Width="109" Click="Button_Click_3"  >
+                                <StackPanel Width="100">
+                                    <Image Stretch="Fill" Source="Images/trash.png" Height="83"/>
+                                    <Label Content="  temizle" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold" FontSize="16"/>
+                                </StackPanel>
+                            </Button>
+                        </Canvas>
+                    </StackPanel>
+
+                </StackPanel>
+
+            </GroupBox>
+            <Button Margin="401,429,64,10" Click="Button_Click_5"  >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <StackPanel Width="143">
+                    <TextBlock Height="29" Foreground="#FFD12B23" FontFamily="Stencil" FontSize="22" FontWeight="Bold" Margin="35,0,34,0">
+                        <TextBlock.Background>
+                            <ImageBrush/>
+                        </TextBlock.Background><Run Text="cikis"/></TextBlock>
+                    <Image Source="Images/exit.ico" Stretch="Fill" Height="78" Margin="10,0"/>
+
+                </StackPanel>
+            </Button>
+            <TextBox Visibility="Hidden" x:Name="textbid" HorizontalAlignment="Left" Height="23" Margin="303,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+    </Viewbox>
+</Window>

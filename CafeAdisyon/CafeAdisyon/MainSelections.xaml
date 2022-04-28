@@ -1,0 +1,104 @@
+﻿<Window x:Class="CafeAdisyon.MainSelections"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeAdisyon"
+        mc:Ignorable="d"
+        Title="Ana Menü" Height="584" Width="975.5" >
+    <Viewbox Stretch="Fill">
+        <Grid Margin="0,0,0,-21">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/texture_pattern_black_background-672119.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button Margin="396,57,641,449" Click="Button_Click" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                <TextBlock Height="29" Width="102" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masalar"/></TextBlock>
+                <Image Source="Images/dinner_table-restaurant-table-furniture-512.png "  Stretch="UniformToFill" Height="103" Width="120"/>
+
+            </StackPanel>
+        </Button>
+        <Button Margin="678,57,373,449" Click="Button_Click_5" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel Width="155">
+                <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="10,0,0,0">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Rezervasyon"/></TextBlock>
+                <Image Source="Images/Events-Icon.png"  Stretch="Fill" Height="104" Margin="10,0"/>
+
+            </StackPanel>
+        </Button>
+
+        <Button Margin="396,234,641,262" Click="Button_Click_4" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel Width="155">
+                <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="10,0,0,0">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Kasa Islemi"/></TextBlock>
+                <Image Source="Images/icon_aff_cashpaid.png"  Stretch="Fill" Height="104" Margin="10,0"/>
+
+            </StackPanel>
+        </Button>
+        <Button Margin="678,234,373,262" Click="Button_Click_3" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel Width="155">
+                <TextBlock Height="38" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="24,0,10,0">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Raporlar" /></TextBlock>
+                <Image Source="Images/icon-documents-orange.png"  Stretch="Uniform" Height="92" Margin="10,0"/>
+
+            </StackPanel>
+        </Button>
+        <Button Margin="396,429,641,82" Click="Button_Click_2" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel Width="155">
+                <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="28,0,23,0">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Urunler"/></TextBlock>
+                <Image Source="Images/635985996275349551.jpg"  Stretch="Fill" Height="104" Margin="10,0"/>
+
+            </StackPanel>
+        </Button>
+        <Button Margin="678,429,373,82" Click="Button_Click_6" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel Width="155">
+                <TextBlock Height="29" Foreground="#FFD12B23" FontFamily="Stencil" FontSize="22" FontWeight="Bold" Margin="43,0,34,0">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="cikis"/></TextBlock>
+                <Image Source="Images/exit.ico" Stretch="Fill" Height="104" Margin="10,0"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="1171,14,10,583" Click="Button_Click_1" >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <StackPanel Width="84" >
+                    <Image Source="Images/setting.png" Stretch="Fill" Height="63"/>
+
+                </StackPanel>
+            </Button>
+        </Grid>
+        </Viewbox>
+</Window>

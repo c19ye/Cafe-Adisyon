@@ -1,0 +1,318 @@
+﻿<Window x:Class="CafeAdisyon.Masalar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeAdisyon"
+        mc:Ignorable="d"
+        Title="Masalar" Height="584" Width="975.5" Loaded="Masalar_OnLoaded">
+    <Viewbox Stretch="Fill">
+        <Grid Name="Content_icerik">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/texture_pattern_black_background-672119.jpg"></ImageBrush>
+        </Grid.Background>
+            <Button Margin="20,60,820,355" Click="Button_Click_1" x:Name="ms1">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms1"   Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 1" /></TextBlock>
+                <Image Name="ims1" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="153,60,687,355" Click="Button_Click_2" x:Name="ms2">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms2" Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 2"/></TextBlock>
+                <Image Name="ims2" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="286,60,554,355" Click="Button_Click_3" x:Name="ms3">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms3" Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 3"/></TextBlock>
+                <Image Name="ims3" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="419,60,421,355" Click="Button_Click_31" x:Name="ms4">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms4"  Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 4"/></TextBlock>
+                <Image Name="ims4" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="552,60,288,355" Click="Button_Click_4" x:Name="ms5">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms5" Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 5"/></TextBlock>
+                <Image Name="ims5" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="685,60,155,355" Click="Button_Click_5" x:Name="ms6">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms6" Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 6"/></TextBlock>
+                <Image Name="ims6" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="818,60,22,355" Click="Button_Click_6" x:Name="ms7">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms7"  Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 7"/></TextBlock>
+                <Image Name="ims7" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="20,203,820,212" Click="Button_Click_7" x:Name="ms8">
+                <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms8" Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 8"/></TextBlock>
+                <Image Name="ims8" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="153,203,687,212" Click="Button_Click_8" x:Name="ms9">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms9" Height="29" Width="79" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 9"/></TextBlock>
+                    <Image Name="ims9" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="286,203,554,212" Click="Button_Click_9" x:Name="ms10">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms10" Height="29" Width="95" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 10"/></TextBlock>
+                    <Image Name="ims10" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="419,203,421,212" Click="Button_Click_10" x:Name="ms11">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms11" Height="29" Width="92" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 11"/></TextBlock>
+                    <Image Name="ims11" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="552,203,288,212" Click="Button_Click_11" x:Name="ms12">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms12" Height="29" Width="93" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 12"/></TextBlock>
+                    <Image Name="ims12"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="685,203,155,212" Click="Button_Click_12" x:Name="ms13">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms13" Height="29" Width="95" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 13"/></TextBlock>
+                    <Image Name="ims13"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="818,203,22,212" Click="Button_Click_13" x:Name="ms14">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms14" Height="29" Width="92" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 14"/></TextBlock>
+                    <Image Name="ims14"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="20,346,820,69" Click="Button_Click_14" x:Name="ms15">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms15" Height="29" Width="91" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 15"/></TextBlock>
+                    <Image Name="ims15"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="153,346,687,69" Click="Button_Click_15" x:Name="ms16">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms16" Height="29" Width="91" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 16"/></TextBlock>
+                    <Image Name="ims16"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="286,346,554,69" Click="Button_Click_16" x:Name="ms17">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms17" Height="29" Width="91" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 17"/></TextBlock>
+                    <Image Name="ims17"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="419,346,421,69" Click="Button_Click_17" x:Name="ms18">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms18" Height="29" Width="93" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 18"/></TextBlock>
+                    <Image Name="ims18"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="552,346,288,69" Click="Button_Click_18" x:Name="ms19">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms19" Height="29" Width="94" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 19"/></TextBlock>
+                    <Image Name="ims19"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+        <Button Margin="685,346,155,69">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                <TextBlock Height="29" Width="92" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 20"/></TextBlock>
+                <Image Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="818,346,22,69" Click="Button_Click_20" x:Name="ms21">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms21" Height="29" Width="93" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 21"/></TextBlock>
+                    <Image Name="ims21"  Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="685,346,155,69" Click="Button_Click_19" x:Name="ms20">
+                <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                    <TextBlock x:Name="tms20" Height="29" Width="92" Foreground="#EFC517" FontFamily="Stencil" FontSize="22" FontWeight="Bold">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Masa 20"/></TextBlock>
+                    <Image Name="ims20" Source="Images/smasa.png"  Stretch="Uniform" Height="102" Width="121"/>
+
+            </StackPanel>
+        </Button>
+            <Button Margin="818,489,22,10" Click="Button_Click" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                <Image Source="Images/exit.ico" Height="51" Width="52"/>
+            </StackPanel>
+        </Button>
+        <Button Margin="818,10,22,498" Click="Button_Click_21">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <StackPanel>
+                <Image Source="Images/Refresh-icon.png" Height="38" Width="52"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+        </Viewbox>
+</Window>

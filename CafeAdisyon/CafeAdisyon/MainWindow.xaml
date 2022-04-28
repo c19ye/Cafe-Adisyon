@@ -1,0 +1,46 @@
+﻿<Window x:Class="CafeAdisyon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeAdisyon"
+        mc:Ignorable="d"
+        Title="Giriş" Height="547.787" Width="779.175" Loaded="Window_Loaded">
+
+    <Viewbox Stretch="Fill">
+
+        <Grid Height="517" Width="771" >
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/texture_pattern_black_background-672119.jpg" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Image Margin="150,10,149,408" Stretch="Fill" >
+                <Image.Source>
+                    <BitmapImage  UriSource="/Images/logo.png" />
+                </Image.Source>
+            </Image>
+            <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="335,171,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+            <ComboBox x:Name="ComboBoxk" HorizontalAlignment="Left" Margin="335,132,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBoxk_SelectionChanged" />
+            <GroupBox  Margin="217,221,217,10" Header="Giriş Yap" Foreground="#FFEE9621">
+                <Grid Margin="0,0,-2,-2">
+                    <Button Content="5" HorizontalAlignment="Left" Margin="95,89,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_6"/>
+                    <Button Content="0" HorizontalAlignment="Left" Margin="95,187,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_1"/>
+                    <Button Content="6" HorizontalAlignment="Left" Margin="144,89,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_7"/>
+                    <Button Content="3" HorizontalAlignment="Left" Margin="144,138,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_4"/>
+                    <Button Content="2" HorizontalAlignment="Left" Margin="95,138,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_3"/>
+                    <Button Content="1" HorizontalAlignment="Left" Margin="46,138,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_2"/>
+                    <Button Content="4" HorizontalAlignment="Left" Margin="46,89,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_5"/>
+                    <Button Content="9" HorizontalAlignment="Left" Margin="144,40,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_10"/>
+                    <Button Content="8" HorizontalAlignment="Left" Margin="95,40,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_9"/>
+                    <Button Content="7" HorizontalAlignment="Left" Margin="46,40,0,0" VerticalAlignment="Top" Width="44" Height="44" Click="Button_Click_8"/>
+                    <Button Content="Giriş Yap" HorizontalAlignment="Left" Margin="245,40,0,0" VerticalAlignment="Top" Width="72" Height="100" Click="Button_Click"/>
+                    <Button Margin="245,145,10,84" Content="Sil" Click="Button_Click_11"/>
+                </Grid>
+            </GroupBox>
+            <Label Content="Kullanıcı Şifresi :" HorizontalAlignment="Left" Margin="234,168,0,0" VerticalAlignment="Top" Width="96" Foreground="#FFEE9621" />
+            <Label Content="Kullanıcı :" HorizontalAlignment="Left" Margin="266,132,0,0" VerticalAlignment="Top" Width="64" Foreground="#FFEE9621" RenderTransformOrigin="0.562,0.5" />
+
+        </Grid>
+
+    </Viewbox>
+
+</Window>

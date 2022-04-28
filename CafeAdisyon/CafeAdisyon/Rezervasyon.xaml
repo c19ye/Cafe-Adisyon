@@ -1,0 +1,89 @@
+﻿<Window x:Class="CafeAdisyon.Rezervasyon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeAdisyon"
+        mc:Ignorable="d"
+        Title="Rezervasyon" Height="590.141" Width="848.894" Loaded="Rezervasyon_OnLoaded">
+    <Viewbox Stretch="Fill">
+        <Grid>
+
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/texture_pattern_black_background-672119.jpg"/>
+            </Grid.Background>
+            <Button Margin="673,311,80,249" Click="Button_Click" >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+
+                <TextBlock Height="33" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Width="177">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Rezervasyon Ac"/></TextBlock>
+
+
+            </Button>
+            <Button Margin="636,521,13,10" Click="ButtonBase_OnClick"  RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <StackPanel>
+                    <Image Source="Images/exit.ico" Height="51" Width="92"/>
+                </StackPanel>
+            </Button>
+            <DataGrid Width="400" Height="547" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" 
+                      HorizontalAlignment="Center" VerticalAlignment="Center"  AutoGenerateColumns="False"  IsReadOnly="true"  Margin="10,20,564,33" Name="datagrid">
+                <DataGrid.Columns>
+                    <DataGridTextColumn  Width="150" Header="Ad Soyad" Binding="{Binding ad}"/>
+                    <DataGridTextColumn  Width="70" Header="Kişi Sayısı" Binding="{Binding kisi}"/>
+                    <DataGridTextColumn  Width="60" Header="Masa" Binding="{Binding masa}"/>
+                    <DataGridTextColumn  Width="150" Header="Tarih" Binding="{Binding tarih,StringFormat={}{0:MM/dd/yyyy}}"/>
+
+                </DataGrid.Columns>
+
+
+            </DataGrid>
+            <TextBlock Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="0,56,301,510" HorizontalAlignment="Right" Width="207">
+                <TextBlock.Background>
+                    <ImageBrush/>
+                </TextBlock.Background><Run Text="Müsteri Ad Soyad:"/></TextBlock>
+
+            <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="0,102,301,469" HorizontalAlignment="Right" Width="133">
+                <TextBlock.Background>
+                    <ImageBrush/>
+                </TextBlock.Background><Run Text="Kisi Sayisi:"/></TextBlock>
+            <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="0,151,306,420" HorizontalAlignment="Right" Width="80">
+                <TextBlock.Background>
+                    <ImageBrush/>
+                </TextBlock.Background><Run Text=" Masa:"/></TextBlock>
+            <ComboBox Margin="673,151,80,422" Name="cmb_masalar"></ComboBox>
+            <DatePicker Margin="673,221,55,355" Name="DatePicker"></DatePicker>
+            <!--<Calendar Height="170" HorizontalAlignment="Left" Margin="673,200,0,0"  
+                      Name="calendar1" VerticalAlignment="Top" Width="221" />-->
+            <TextBox Name="txtad" HorizontalAlignment="Left" Height="23" Margin="673,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+            <TextBox Name="txtkisi" HorizontalAlignment="Left" Height="23" Margin="673,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+            <Button Margin="673,465,80,98" Click="ButtonBase_OnClickk" >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+
+                <TextBlock Height="33" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Width="177">
+                    <TextBlock.Background>
+                        <ImageBrush/>
+                    </TextBlock.Background><Run Text="Rezervasyon Sil"/></TextBlock>
+
+
+            </Button>
+            <ComboBox Margin="673,403,80,170" x:Name="cmb_masalar_Copy"/>
+        </Grid>
+    </Viewbox>
+</Window>

@@ -1,0 +1,77 @@
+﻿<Window x:Class="CafeAdisyon.KasaRapor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeAdisyon"
+        mc:Ignorable="d"
+        Title="KasaRapor" Height="590.141" Width="848.894">
+    <Viewbox Stretch="Fill">
+        <Grid>
+
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/texture_pattern_black_background-672119.jpg"/>
+            </Grid.Background>
+            <Button Margin="75,148,582,368" Click="Button_Click" >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <StackPanel Width="159">
+                    <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="-17,0,-26,0">
+                        <TextBlock.Background>
+                            <ImageBrush/>
+                        </TextBlock.Background><Run Text="Günlük z raporu"/></TextBlock>
+
+                </StackPanel>
+            </Button>
+            <Button Margin="75,268,582,248" Click="Button_Click_1" >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <StackPanel Width="208">
+                    <TextBlock Height="29" Foreground="#FFEE9621" FontFamily="Stencil" FontSize="20" FontWeight="Bold" Margin="33,0,0,0">
+                        <TextBlock.Background>
+                            <ImageBrush/>
+                        </TextBlock.Background><Run Text="Aylik Rapor"/></TextBlock>
+
+                </StackPanel>
+            </Button>
+            <StackPanel>
+                <DataGrid Width="353" Height="547" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"  AutoGenerateColumns="False"  IsReadOnly="true"  Margin="429,23,192,10" Name="datagrid">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn  Width="100" Header="Ürün" Binding="{Binding urunadi}"/>
+                        <DataGridTextColumn  Width="100" Header="Fiyat" Binding="{Binding fiyat}"/>
+                        <DataGridTextColumn  Width="150" Header="Ödeme Türü" Binding="{Binding tur}"/>
+
+                    </DataGrid.Columns>
+
+
+                </DataGrid>
+            </StackPanel>
+
+            <Button Margin="793,482,23,10" Click="ButtonBase_OnClick"  RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <StackPanel>
+                    <Image Source="Images/exit.ico" Height="51" Width="92"/>
+                </StackPanel>
+            </Button>
+            <Label Visibility="Hidden"  Name="lbUrun" Margin="12,10,30,23"/>
+            <Label Visibility="Hidden"  Name="lbFiyat" Margin="12,10,21,23"/>
+            <Label FontSize="20" Content="Toplam Tutar:" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold"  HorizontalAlignment="Left" Margin="53,433,0,0" VerticalAlignment="Top" Width="168"/>
+            <Label FontSize="20" Name="lbl3" Content="" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold"  HorizontalAlignment="Left" Margin="226,433,0,0" VerticalAlignment="Top" Width="119" Height="34"/>
+            <Label FontSize="20" Content="Satilan Urun Miktari:" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold"  HorizontalAlignment="Left" Margin="19,472,0,0" VerticalAlignment="Top" Width="259"/>
+            <Label FontSize="20" x:Name="lbl3_Copy" Content="" Foreground="#FFEE9621" FontFamily="Stencil" FontWeight="Bold"  HorizontalAlignment="Left" Margin="283,472,0,0" VerticalAlignment="Top" Width="119" Height="34"/>
+        </Grid>
+    </Viewbox>
+</Window>
